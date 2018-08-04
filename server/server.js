@@ -8,6 +8,8 @@ const passportConfig = require('./services/auth');
 const MongoStore = require('connect-mongo')(session);
 const schema = require('./schemaForGraphQL/schema');
 
+const { getAllUsers } = require('./services/dbQueries');
+
 // Create a new Express application
 const app = express();
 
